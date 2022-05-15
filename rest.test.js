@@ -16,3 +16,9 @@ describe("mergeObjects", function () {
         expect(mergeObjects({ a: 1, b: 2 }, { c: 3, d: 4 })).toEqual({ a: 1, b: 2, c: 3, d: 4 });
     });
 });
+
+describe("doubleAndReturnArgs", function () {
+    it("It should accept an array and numbers double all results and return them doubled", function () {
+        expect(doubleAndReturnArgs([1, 2, 3], 4, 4)).toEqual([1, 2, 3, 8, 8]);
+    });
+});
