@@ -10,3 +10,9 @@ describe("findMin", function () {
         expect(findMin(1, 4, 12, -3)).toEqual(-3);
     });
 });
+
+describe("mergeObjects", function () {
+    it("should return accept 2 objects and merge them to 1", function () {
+        expect(mergeObjects({ a: 1, b: 2 }, { c: 3, d: 4 })).toEqual({ a: 1, b: 2, c: 3, d: 4 });
+    });
+});
