@@ -5,3 +5,8 @@ describe("ES2015 conversion", function () {
     });
 });
 
+describe("findMin", function () {
+    it("should return the lowest number", function () {
+        expect(findMin(1, 4, 12, -3)).toEqual(-3);
+    });
+});
