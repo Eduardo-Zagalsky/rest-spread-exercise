@@ -19,3 +19,9 @@ const removeRandom = (items) => {
 };
 
 const extend = (arr1, arr2) => [...arr1, ...arr2];
+
+const addKeyVal = (obj, key, val) => {
+    let newObj = { ...obj };
+    newObj[key] = val;
+    return newObj;
+}
