@@ -12,3 +12,8 @@ const findMin = (...nums) => nums.reduce((num, min) => num < min ? num : min);
 const mergeObjects = (obj1, obj2) => ({ ...obj1, ...obj2 });
 
 const doubleAndReturnArgs = (arr, ...nums) => [...arr, ...nums.map(num => num * 2)];
+
+const removeRandom = (items) => {
+    let toRemove = Math.floor(Math.random() * items.length);
+    return [...items.slice(0, toRemove), ...items.slice(toRemove + 1)];
+};
