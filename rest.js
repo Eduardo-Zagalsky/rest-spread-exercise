@@ -31,3 +31,6 @@ const removeKey = (obj, key) => {
     delete newObj[key];
     return newObj;
 }
+
+const combine = (obj1, obj2) => ({ ...obj1, ...obj2 });
+
