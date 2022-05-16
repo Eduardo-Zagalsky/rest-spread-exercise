@@ -17,3 +17,5 @@ const removeRandom = (items) => {
     let toRemove = Math.floor(Math.random() * items.length);
     return [...items.slice(0, toRemove), ...items.slice(toRemove + 1)];
 };
+
+const extend = (arr1, arr2) => [...arr1, ...arr2];
